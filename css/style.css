@@ -75,6 +75,7 @@ footer{
 
 #logo{
    /*Your code here.*/
+  -webkit-animation: logo-wiggle;
   animation-name: logo-wiggle;
   animation-duration: 15s;
   /* animation-iteration-count: initial; */
@@ -86,9 +87,9 @@ footer{
   /*Your code here.*/
   /*Don't forget to vertically and horizontally alight the card*/
   display: flex;
-  /* vertical-align: center; */
   justify-content: center;
-  align-self: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -162,13 +163,15 @@ header{
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
   display: flex;
-  flex-direction : column;
+  flex-direction: column;
   align-items: center;
 }
 
 .nav_links{
   /*Your code here again.*/
+  display: flex;
   align-self: center;
+  flex-direction: column;
   /* Why not justify-content: center? */
 }
 
@@ -200,15 +203,14 @@ header{
 
   /* Navbar */
   header{
-    /*Your code here again.*/  
-    /* display: flex;
-    align-items: flex-start;
-    flex-direction: column; */
+    /*Your code here again.*/ 
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav_links{
     /*Your code here again.*/  
-    /* align-items: flex-end; */
+    flex-direction: row;
   }
 
   .nav_item a{
@@ -226,7 +228,7 @@ header{
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
-@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+@media screen and (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0s;
   }
