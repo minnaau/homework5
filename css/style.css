@@ -224,9 +224,9 @@ header{
   }
   /*Your code here again.*/
   /*You will want four selectors*/ 
-  /* body {
-    background: white;
-  } */
+  body {
+    background-image: url();
+  }
   .gallery {
     display: none;
   } 
@@ -235,7 +235,7 @@ header{
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
 @media screen and (prefers-reduced-motion: reduce) {
-  * {
+  #logo {
     animation-duration: 0s;
   }
 }
