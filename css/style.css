@@ -225,11 +225,21 @@ header{
   /*Your code here again.*/
   /*You will want four selectors*/ 
   body {
-    background-image: url();
+    background-image: none;
   }
   .gallery {
     display: none;
   } 
+  .pricing {
+    align-items: flex-start;
+  }
+  #gallery {
+    display: none;
+  }
+  footer {
+    display: block;
+  }
+
 }
 
 /*Your code here again.*/ 
@@ -237,5 +247,6 @@ header{
 @media screen and (prefers-reduced-motion: reduce) {
   #logo {
     animation-duration: 0s;
+    /*animation: none*/
   }
 }
