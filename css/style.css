@@ -75,8 +75,8 @@ footer{
 
 #logo{
    /*Your code here.*/
-  -webkit-animation: logo-wiggle;
-  animation-name: logo-wiggle;
+  -webkit-animation: logo_wiggle;
+  animation-name: logo_wiggle;
   animation-duration: 15s;
   /* animation-iteration-count: initial; */
 }
@@ -223,7 +223,13 @@ header{
     flex-basis: 200px;
   }
   /*Your code here again.*/
-  /*You will want four selectors*/  
+  /*You will want four selectors*/ 
+  /* body {
+    background: white;
+  } */
+  .gallery {
+    display: none;
+  } 
 }
 
 /*Your code here again.*/ 
