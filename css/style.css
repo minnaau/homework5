@@ -55,19 +55,29 @@ footer{
 
 @-webkit-keyframes logo_wiggle{
   /*Your code here.*/
-
+  from {
+    width: 25px;
+  }
+  to {
+    width: 420px;
+  }
 }
 
 @keyframes logo_wiggle{
   /*Your code here.*/
-  
-
+  from {
+    width: 25px;
+  }
+  to {
+    width: 420px;
+  }
 } 
 
 #logo{
    /*Your code here.*/
   animation-name: logo-wiggle;
   animation-duration: 15s;
+  animation-iteration-count: initial;
 }
 
 /* Cards! */
@@ -135,6 +145,9 @@ footer{
 .gallery{
   min-height: 600px;
   /*Your code here again.*/
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .gallery > img{
@@ -149,13 +162,14 @@ header{
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
   display: flex;
-  flex-direction: column;
+  flex-direction : column;
+  align-items: center;
 }
 
 .nav_links{
   /*Your code here again.*/
-  justify-content: center;
   align-self: center;
+  /* Why not justify-content: center? */
 }
 
 .nav_item a{
@@ -186,10 +200,14 @@ header{
   /* Navbar */
   header{
     /*Your code here again.*/  
+    /* display: flex;
+    align-items: flex-start;
+    flex-direction: column; */
   }
 
   .nav_links{
     /*Your code here again.*/  
+    /* align-items: flex-end; */
   }
 
   .nav_item a{
@@ -207,3 +225,8 @@ header{
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce), (update: slow) {
+  * {
+    animation-duration: 0s;
+  }
+}
